@@ -1,0 +1,96 @@
+/* inicializar o css */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* variaveis para auxiliar no desenvolvimento do CSS */
+:root{
+
+    --background-color: #1A374D;
+    --color-plano01: #406882;
+    --color-plano02: #6998AB;
+    --color-plano03: #B1D0E0;
+
+}
+
+
+body{
+
+    background-color: var(--background-color);
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    color: #cbdbe4;
+
+}
+
+/* esse é o background a onde vai ficar os dados do cronometro */
+.cronometro-background{
+    max-width: 60em;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10em auto;
+    padding: 2em;
+
+    font-size: 1em;
+    align-items: center;
+    align-content: center;
+    background-color: var(--color-plano01);
+    box-shadow: 20px -7px 5px -3px #000a13;
+    border-radius: 1em;
+
+}
+
+/* esses dados são na verdades o posicionamento das coisas que vão estar dentro da placa principal */
+
+.cronometro-dados{
+    margin: 0 auto;
+    text-align: center;
+}
+/* aqui é o css dos botões existentes no cronometro nessa parte
+tem o posicionamento dos botões e o estilo deles */
+.button-div{
+    margin: 1em auto;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 1.3em;
+    max-width: 16.6vh;
+}
+
+.button-cronometro {
+    text-align: center;
+    border-radius: 2px;
+    padding: 1em;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #162e41;
+    cursor: pointer;
+    border: none;
+    background-color: var(--color-plano03);
+
+}
+
+.button-cronometro:hover{
+    transition: 0.5s;
+    filter:brightness(90%);
+    box-shadow: 10px 5px 5px -3px var(--background-color)
+    /* color: #cbdbe4; */
+}
+
+/* aqui é onde vai ficar o local dos números do cronometro */
+.cronometro-central {
+    max-width: 30em;
+    padding: 1em;
+
+    font-size: 5em;
+    border-radius: 1em;
+    background-color: var(--color-plano02);
+    text-shadow: 5px 2px 0px  var(--background-color);
+
+}
+
+.cronometro-central:hover{
+    transition: 1s;
+    box-shadow: 20px -7px 5px -3px var(--background-color);
+}

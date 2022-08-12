@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet"> 
+        <title>Cronômetro</title>
+    </head>
+    <body>
+       <section>
+           <div class="cronometro-background">
+                <div class="cronometro-dados">
+                        <h1>Cronômetro</h1>
+                        <div class="button-div">
+                            <button onclick="start()" class="button-cronometro">Iniciar</button>
+                            <button onclick="pause()" class="button-cronometro">Pausar</button>
+                            <button onclick="stop()" class="button-cronometro">Parar</button>
+                        </div>
+
+                        <div class="cronometro-central">
+                            <h1 id="counter" class="counter">00:00:00</h1>
+                        </div>
+                </div>
+           </div>
+       </section>
+       <script src="cronometro.js"></script> 
+    </body>
+</html> 
